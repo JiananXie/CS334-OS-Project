@@ -290,7 +290,7 @@ go:
 ```
 
 因此，此代码片段实现了将 boot sector 加载到内存中并准备执行代码的任务。首先使用 `mov` 命令将要加载 boot sector 的内存地址分别赋值给 DS 和 ES 寄存器。然后，使用 `rep; movsw` 命令将 boot sector 中的数据复制到目的位置。最后，使用 `ljmp` 命令通过长跳转跳转到另一个初始化模块，间接地启动程序。在这个过程中，还将堆栈指针的初始值设置为 0xFF00。
-
+### Final course project grade: 79/100.
 
 
 
